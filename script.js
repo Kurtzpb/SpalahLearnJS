@@ -1,6 +1,6 @@
-var getSum = function() {
+function getSum() {
 	var index = 1;
-	var sum = 0;
+	var sum = "";
 	console.log("Arguments length = " + arguments.length + "\n*********");
 	if (arguments.length === 0) {
 		console.log("Empty");
@@ -8,10 +8,14 @@ var getSum = function() {
 	else {
 		for (var i = 0; i < arguments.length; i++) {
 			console.log("Argument " + index++ + " = " + arguments[i] + "\n*********");
-			sum += arguments[i];
+			sum += arguments[i] + ", ";
 		}
 	}
 	return (console.log("Sum is " + sum));
 }
 
-getSum(5, 8, 15, 43, 7);
+getSum(5, 8, "Hello", 7);
+
+(function () { 
+	console.log("------------------" + "\nHi!");
+}());
