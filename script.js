@@ -1,15 +1,13 @@
 var getSum = function() {
 	var index = 1;
 	var sum = 0;
-	console.log("Arguments length = " + arguments.length);
-	console.log("*********");
+	console.log("Arguments length = " + arguments.length + "\n*********");
 	if (arguments.length === 0) {
 		console.log("Empty");
 	}
 	else {
 		for (var i = 0; i < arguments.length; i++) {
-			console.log("Argument " + index++ + " = " + arguments[i]);
-			console.log("*********");
+			console.log("Argument " + index++ + " = " + arguments[i] + "\n*********");
 			sum += arguments[i];
 		}
 	}
