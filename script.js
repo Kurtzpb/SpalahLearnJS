@@ -16,4 +16,4 @@ var getSum = function() {
 	return (console.log("Sum is " + sum));
 }
 
-getSum(5, 8, 15);
+getSum(5, 8, 15, 43);
