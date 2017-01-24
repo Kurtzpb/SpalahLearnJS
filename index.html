@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script type="text/javascript" src="script.js" ></script>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Credit</title>
 </head>
 <body>
-	
+    <script>
+var randomNumber = Math.random();
+var programChoise;
+var userInput = prompt('Я хочу сыграть с тобой в игру. Введи "камень", "ножницы" или "бумага"!').toLowerCase();
+
+if (randomNumber <= 0.33) {
+    programChoise = "камень";
+} else if (randomNumber >= 0.67) {
+    programChoise = "бумага";
+} else {
+    programChoise = "ножницы";
+}
+
+var win = "У меня " + programChoise + ". Ты выиграл!";
+var loose = "У меня " + programChoise + ". Ты проиграл!";
+
+if (userInput === programChoise) {
+    alert("Ничья! Попробуй ещё раз!")
+} else if (userInput === "камень") {
+    if (programChoise === "ножницы") {
+        alert(win);
+    } else {
+        alert(loose);
+    }
+} else if (userInput === "ножницы") {
+    if (programChoise === "бумага") {
+        alert(win);
+    } else {
+        alert(loose);
+    }
+} else if (userInput === "бумага") {
+    if (programChoise === "камень") {
+        alert(win);
+    } else {
+        alert(loose);
+    }
+} else {
+    alert("Эй! Ты жулик! Давай играть по правилам!")
+}
+    </script>
 </body>
 </html>
