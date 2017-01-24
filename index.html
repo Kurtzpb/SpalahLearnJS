@@ -24,23 +24,11 @@ var loose = "У меня " + programChoise + ". Ты проиграл!";
 if (userInput === programChoise) {
     alert("Ничья! Попробуй ещё раз!")
 } else if (userInput === "камень") {
-    if (programChoise === "ножницы") {
-        alert(win);
-    } else {
-        alert(loose);
-    }
+    programChoise === "ножницы" ? alert(win) : alert(loose);
 } else if (userInput === "ножницы") {
-    if (programChoise === "бумага") {
-        alert(win);
-    } else {
-        alert(loose);
-    }
+    programChoise === "бумага" ? alert(win) : alert(loose);
 } else if (userInput === "бумага") {
-    if (programChoise === "камень") {
-        alert(win);
-    } else {
-        alert(loose);
-    }
+    programChoise === "камень" ? alert(win) : alert(loose);
 } else {
     alert("Эй! Ты жулик! Давай играть по правилам!")
 }
