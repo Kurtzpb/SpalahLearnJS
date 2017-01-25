@@ -19,9 +19,6 @@
 
 // (function () { 
 // 	console.log("//////////////" + "\nHi!");
-// }());
+// })
 
-var random = Math.random()
-
-console.log(random);
-console.log(random <= 0.33)
+console.log(Math.floor(Math.random()*3));

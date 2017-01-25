@@ -8,7 +8,7 @@
     <script>
 var randomNumber = Math.random();
 var programChoise;
-var userInput = prompt('Я хочу сыграть с тобой в игру. Введи "камень", "ножницы" или "бумага"!').toLowerCase();
+var userInput = prompt('Я хочу сыграть с тобой в игру. Введи "камень", "ножницы" или "бумага"!').toLowerCase().trim();
 
 if (randomNumber <= 0.33) {
     programChoise = "камень";
@@ -30,7 +30,7 @@ if (userInput === programChoise) {
 } else if (userInput === "бумага") {
     programChoise === "камень" ? alert(win) : alert(loose);
 } else {
-    alert("Эй! Ты жулик! Давай играть по правилам!")
+    alert("Эй! Ты жулик! Давай играть по правилам!");
 }
     </script>
 </body>
